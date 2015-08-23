@@ -17,8 +17,8 @@ cached <- NULL
 # store a matrix
 setMatrix <- function(newValue) {
 x <<- newValue
-# Matrix is being assigned a new value
-# Reassign cache as NULL
+#Matrix is being assigned a new value
+#Reassign cache as NULL
 cached <<- NULL
   }
   
@@ -42,8 +42,7 @@ cacheInverse <- function(solve) {
 }
 
 
-# The following function calculates the inverse of a "special" matrix created with 
-# makeCacheMatrix
+# The following function calculates the inverse of a "special" matrix created with makeCacheMatrix
 cacheSolve <- function(y, ...) {
   # get the cached value
   inverse <- y$getInverse()
